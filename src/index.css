@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+}
+.bg-hero{
+  background-image:url("./assets/images/home-hero.png");
+  background-position: 0 0;
+  background-size:cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.a-bg-img{
+  background-image:url("./assets/images/about-img-01.png");
+  background-position: 0 0;
+  background-size:cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+@layer base {
+  h1 {
+    @apply text-2xl ;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  .cta_btn{
+    @apply bg-green-600 py-2 px-6 font-semibold tracking-widest hover:shadow-2xl hover:scale-110 transition-all hover:bg-green-700 duration-150 ease-linear text-white ;
+
+  }
+}
