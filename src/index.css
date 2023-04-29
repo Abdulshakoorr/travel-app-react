@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body{
   font-size: 16px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color:#FFF7ED;
 }
 .bg-hero{
   background-image:url("./assets/images/home-hero.png");
@@ -28,8 +29,11 @@ body{
   h2 {
     @apply text-xl;
   }
+  p {
+    @apply text-sm text-gray-600;
+  }
   .cta_btn{
-    @apply bg-green-600 py-2 px-6 font-semibold tracking-widest hover:shadow-2xl hover:scale-110 transition-all hover:bg-green-700 duration-150 ease-linear text-white ;
+    @apply bg-orange-400 py-2 px-6 font-semibold tracking-widest hover:shadow-2xl hover:scale-110 transition-all hover:bg-orange-500 duration-150 ease-linear text-white ;
 
   }
 }
