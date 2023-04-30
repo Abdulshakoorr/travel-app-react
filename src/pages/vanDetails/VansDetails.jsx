@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { NavLink, useParams } from 'react-router-dom'
 
 const vansDetailsDetails = () => {
   const [vansDetail, setVansDetail] = useState([]);
@@ -30,7 +30,7 @@ console.log(vansDetail)
                     <h2 className='text-4xl font-bold'>{vansDetail.name}</h2>
                     <p className="vansDetail-price"><span>${vansDetail.price}</span>/day</p>
                     <p className='lg:w-96 leading-6'>{vansDetail.description}</p>
-                    <button className="link-button bg-orange-300 font-bold tracking-wider p-4 px-8">Rent this vansDetail</button>
+                    <NavLink className="link-button bg-orange-300 font-bold tracking-wider p-4 px-8">Rent this vansDetail</NavLink>
                 </div>
                     </div>
             ) : <h2>Loading...</h2>}

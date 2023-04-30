@@ -15,13 +15,16 @@ import HostVansDetails from "./pages/Host/HostVansDetails.jsx";
 import HostVanInfo from "./pages/Host/HostVanInfo.jsx";
 import HostVanPricing from "./pages/Host/HostVanPricing.jsx";
 import HostVanPhotos from "./pages/Host/HostVanPhotos.jsx";
+import PageNotFound from "./pages/404/PageNotFound.jsx";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route path="*" element={<PageNotFound />}/>
           <Route index element={<Home />} />
+
           <Route path="about" element={<About />} />
           <Route path="vans">
             <Route index element={<Vans />} />
